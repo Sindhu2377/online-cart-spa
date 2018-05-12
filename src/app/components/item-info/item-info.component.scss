@@ -1,0 +1,77 @@
+.item-info {
+
+    .price {
+        .currency {
+            font-weight: bold;
+        }
+        .online-price {
+            font-size: small;
+        }
+
+    }
+
+    .promotions{
+        color: red;
+    }
+
+    .quantity{
+        margin-bottom: 15px;
+        input {
+            border-radius: 5px;
+            height: 40px;
+            padding: 5px;
+        }
+    }
+
+    .buttons{
+        button {
+            min-width: 200px;
+            height: 45px;
+            border-radius: 5px;
+        }
+        .pick-up-in-store{
+            background-color: black;
+            span{
+                color: white;
+            }
+        }
+        .add-to-cart {
+            background-color: red;
+            span {
+                color: white;
+            } 
+        }
+    }
+
+    .returns-info {
+        display: inline-flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        .returns {
+           border-right: 1px solid black;
+           padding-right: 15px;
+
+        }
+
+        .returns-message {
+            padding-left: 15px;
+            text-justify: newspaper;
+        }
+    }
+
+    .secondary-buttons{
+        margin-bottom: 25px;
+        button {
+            background-color: #dddddd;
+            min-width: 175px;
+            border-radius: 5px;
+        }
+    }
+
+    .product-highlights{
+        h3{
+            font-weight: solid;
+        }
+    }
+
+}

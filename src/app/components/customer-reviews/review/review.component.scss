@@ -1,0 +1,15 @@
+.review {
+    margin: 15px;
+    .type {
+        font-weight: bold;
+    }
+    .stars {
+        height: 30px;
+    }
+    .author-info {
+        margin-top: 10px;
+        span {
+            color: blue;
+        }
+    }
+}

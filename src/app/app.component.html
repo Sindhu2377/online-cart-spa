@@ -1,0 +1,17 @@
+<item-carousel [catalogEntryView]="catalogEntryView"></item-carousel>
+<div class="container">
+  <div class="row">
+
+    <!-- Carasoul and customer reviews -->
+    <div class="col-sm-6">
+      <customer-reviews [customerReview]="catalogEntryView?.CustomerReview[0]"></customer-reviews>
+    </div>
+
+    <!-- Item info  -->
+    <div class="col-sm-6">
+      <item-info [catalogEntryView]="catalogEntryView"></item-info>
+    </div>
+  </div>
+
+</div>
+<star-rating-comp [starType]="'icon'" [rating]="3"></star-rating-comp>

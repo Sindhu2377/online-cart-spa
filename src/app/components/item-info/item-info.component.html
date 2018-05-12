@@ -1,0 +1,45 @@
+<div class="item-info">
+    <div class="price">
+        <span class="currency">{{catalogEntryView?.Offers[0]?.OfferPrice[0]?.formattedPriceValue}}</span>
+        <span class="online-price">Online price</span>
+    </div>
+    <hr>
+    <div class="promotions">
+        <div *ngFor="let promotions of catalogEntryView?.Promotions">
+            <div *ngFor="let description of promotions?.Description">
+                <i class="fa fa-tag"></i>
+                {{description?.shortDescription}}
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="quantity">
+        <input placeholder="Quantity">
+    </div>
+    <div class="buttons">
+        <button class="pick-up-in-store">
+            <span>PICK UP IN STORE</span>
+        </button>
+        <button class="add-to-cart">
+            <span>ADD TO CART</span>
+        </button>
+    </div>
+    <div class="returns-info">
+        <div class="returns">Returns</div>
+        <div class="returns-message"> The item must be returned in 30 days of the slip date. See return policy for details. Prices, Promotions, styles
+            and availability may vary by store and online.</div>
+    </div>
+    <div class="secondary-buttons">
+        <button>ADD TO REGISTRY</button>
+        <button>ADD TO LIST</button>
+        <button>SHARE</button>
+    </div>
+    <div class="product-highlights">
+        <h3>Product Highlights</h3>
+        <ul>
+            <li *ngFor="let feature of catalogEntryView?.ItemDescription[0]?.features">
+                <span [innerHtml]="getHtmlData(feature)"></span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="review">
+  <div class="type"> {{reviewType}}</div>
+  <div class="suggestion"> {{reviewSuggestion}}</div>
+  <hr>
+  <div class="stars">
+      
+  </div>
+  <div class="title">
+    <h4>{{review?.title}}</h4>
+  </div>
+  <div class="description">{{review?.review}}</div>
+  <div class="author-info">
+    <span>{{review?.screenName}}</span> 
+    {{review?.datePosted | date: 'mediumDate'}}
+  </div>
+</div>

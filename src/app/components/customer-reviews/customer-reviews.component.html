@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <span></span>
+  </div>
+  <div class="reviews">
+    <div class="col-sm-6">
+      <review 
+        [reviewType]="'PRO'"
+        [reviewSuggestion]="'most helpful 4-5 star review'"
+        [review]="customerReview?.Pro[0]"></review>
+    </div>
+    <div class="col-sm-6">
+      <review 
+      [reviewType]="'CON'"
+      [reviewSuggestion]="'most helpful 1-2 star review'"
+      [review]="customerReview?.Con[0]"></review>
+    </div>
+  </div>
+</div>
