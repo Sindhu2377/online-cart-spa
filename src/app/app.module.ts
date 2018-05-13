@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule} from '@angular/http';
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import { StarRatingModule } from 'angular-star-rating';
 
 import { AppComponent } from './app.component';
 import { ItemCarouselComponent } from './components/item-carousel/item-carousel.component';
@@ -23,8 +22,7 @@ import { ReviewComponent } from './components/customer-reviews/review/review.com
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    StarRatingModule.forRoot()
+    HttpModule
   ],
   providers: [ItemService],
   bootstrap: [AppComponent],

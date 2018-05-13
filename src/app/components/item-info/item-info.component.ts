@@ -11,18 +11,20 @@ export class ItemInfoComponent {
   @Input() catalogEntryView: CatalogEntryViewEntity;
   constructor(private domSanitizer: DomSanitizer) { }
 
-  getHtmlData(text: string){
+  getHtmlData(text: string) {
     return this.domSanitizer.bypassSecurityTrustHtml(text);
   }
 
   isAvailableToPickUpInStore(): boolean {
-    return this.catalogEntryView.purchasingChannelCode === 0
-     || this.catalogEntryView.purchasingChannelCode === 2;
+    return this.catalogEntryView &&
+      (this.catalogEntryView.purchasingChannelCode === "0"
+        || this.catalogEntryView.purchasingChannelCode === "2");
   }
 
   isAddToCardAllowed(): boolean {
-    return this.catalogEntryView.purchasingChannelCode === 0
-    || this.catalogEntryView.purchasingChannelCode === 1;
+    return this.catalogEntryView &&
+      (this.catalogEntryView.purchasingChannelCode === "0"
+        || this.catalogEntryView.purchasingChannelCode === "1");
   }
 
 }
