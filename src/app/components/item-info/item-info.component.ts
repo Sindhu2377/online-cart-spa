@@ -15,4 +15,14 @@ export class ItemInfoComponent {
     return this.domSanitizer.bypassSecurityTrustHtml(text);
   }
 
+  isAvailableToPickUpInStore(): boolean {
+    return this.catalogEntryView.purchasingChannelCode === 0
+     || this.catalogEntryView.purchasingChannelCode === 2;
+  }
+
+  isAddToCardAllowed(): boolean {
+    return this.catalogEntryView.purchasingChannelCode === 0
+    || this.catalogEntryView.purchasingChannelCode === 1;
+  }
+
 }

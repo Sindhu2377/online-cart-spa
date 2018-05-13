@@ -17,10 +17,10 @@
         <input placeholder="Quantity">
     </div>
     <div class="buttons">
-        <button class="pick-up-in-store">
+        <button class="pick-up-in-store" *ngIf="isAvailableToPickUpInStore()">
             <span>PICK UP IN STORE</span>
         </button>
-        <button class="add-to-cart">
+        <button class="add-to-cart" *ngIf="isAddToCardAllowed()">
             <span>ADD TO CART</span>
         </button>
     </div>

@@ -28,7 +28,7 @@ export interface ItemData {
     packageQuantity: string;
     partNumber: string;
     purchasingChannel: string;
-    purchasingChannelCode: string;
+    purchasingChannelCode: number;
     shortDescription: string;
     title: string;
     webclass: string;
